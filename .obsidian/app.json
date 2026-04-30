@@ -1,0 +1,17 @@
+{
+  "baseFontSize": 16,
+  "theme": "obsidian",
+  "enabledPlugins": [],
+  "communityPlugins": [],
+  "newFileLocation": "current",
+  "newFileFolderPath": ".",
+  "attachmentFolderPath": "07-附件",
+  "alwaysUpdateLinks": true,
+  "showUnsupportedFiles": true,
+  "showLineNumber": false,
+  "spellcheck": true,
+  "tabSize": 2,
+  "useTab": false,
+  "readableLineLength": true,
+  "strictLineBreaks": false
+}

@@ -1,0 +1,127 @@
+# 老H自媒体运营知识库 — MkDocs Material 配置
+site_name: 老H自媒体
+site_description: 老黄的专属自媒体运营知识库 — 小红书 · 内容创作 · 运营方法论 · 竞品研究
+site_author: 老黄
+site_url: https://h-social.github.io
+
+repo_url: https://github.com/dylantoo/h-social.github.io
+repo_name: 老H自媒体
+
+# 自媒体风主题（亮色+暗色双模式）
+theme:
+  name: material
+  language: zh
+  font:
+    text: Noto Sans SC
+    code: JetBrains Mono
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: pink
+      toggle:
+        icon: material/weather-night
+        name: 切换暗色模式
+    - scheme: slate
+      primary: deep purple
+      accent: pink
+      toggle:
+        icon: material/weather-sunny
+        name: 切换亮色模式
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - navigation.path
+    - toc.follow
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+
+# 插件
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      height: auto
+      width: auto
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
+      fallback_to_build_date: true
+
+# Markdown 扩展
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - tables
+  - toc:
+      permalink: true
+      title: 目录
+
+# 导航
+nav:
+  - 🏠 首页: index.md
+  - 📈 运营体系:
+    - 01-运营体系/00-目录.md
+    - 账号定位与赛道分析: 01-运营体系/账号定位与赛道分析.md
+    - 小红书算法机制: 01-运营体系/小红书算法机制.md
+  - ✍️ 内容方法论:
+    - 02-内容方法论/00-目录.md
+    - 选题策略: 02-内容方法论/选题策略.md
+    - 文案公式: 02-内容方法论/文案公式.md
+    - 封面设计: 02-内容方法论/封面设计.md
+    - 配图方法论: 02-内容方法论/配图方法论.md
+  - 📦 内容库:
+    - 03-内容库/00-目录.md
+    - 发布记录: 03-内容库/发布记录.md
+  - 🔍 竞品研究:
+    - 04-竞品研究/00-目录.md
+    - 竞品分析框架: 04-竞品研究/竞品账号分析框架.md
+  - 🛠 技能/工具:
+    - 05-技能工具/00-目录.md
+    - CDP全自动发布方案: 05-技能工具/CDP全自动发布方案.md
+    - 内容生成流水线: 05-技能工具/内容生成流水线.md
+    - HOC三层架构: 05-技能工具/HOC三层架构.md
+  - 📖 学习笔记:
+    - 06-学习笔记/00-目录.md
+    - 自媒体运营入门: 06-学习笔记/自媒体运营入门.md
+
+# 自定义
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/dylantoo/h-social.github.io
+    - icon: fontawesome/brands/instagram
+      link: https://www.xiaohongshu.com
+  generator: false
+
+copyright: Copyright &copy; 2026 老H自媒体
+
+# 额外 CSS
+extra_css:
+  - assets/extra.css
